@@ -22,6 +22,9 @@ window.addEventListener('DOMContentLoaded',function(){
  let port='84'
  if(info.get('r')){
     port=info.get('r')
+    if(info.get('r')!='null'||info.get('r')!=null){
+        port=84
+    }
  }
   document.querySelector('[open-dash]').addEventListener('click',function(){
     window.location.replace(`https://localhost:${port}/dashboard`)
