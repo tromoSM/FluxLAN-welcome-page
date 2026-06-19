@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded',function(){
  if(info.get('r')){
     port=info.get('r')
     if(info.get('r')!='null'||info.get('r')!=null){
-        port=84
+        port=3113
     }
  }
   document.querySelector('[open-dash]').addEventListener('click',function(){
